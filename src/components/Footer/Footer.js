@@ -11,7 +11,6 @@ const Footer = () => {
                 <li>Главная</li>
                 <li>Меню</li>
                 <li>Доставка</li>
-                <li>Доставка</li>
                 <li>Контакты</li>
                 <li><img src={phoneIcon} alt=""/>+996500405988</li>
             </ul>

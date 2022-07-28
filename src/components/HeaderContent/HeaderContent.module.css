@@ -1,0 +1,45 @@
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_content h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #254F4C;
+    padding-right: 20px;
+}
+
+.header_content p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D3130;
+}
+.header_content button{
+    width: 216px;
+    height: 49px;
+    border: none;
+    background: #FF583E;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147.19%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header_content button img{
+    /*display: block;*/
+
+}
+.header_content div {
+    width: 420px;
+}

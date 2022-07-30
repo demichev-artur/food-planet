@@ -1,0 +1,141 @@
+.menu_new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.menu_new_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.menu_new_nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu_new_nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-left: 16px;
+    color: #1D3130;
+}
+.menu_new_nav h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #254F4C;
+    margin: 0 200px 0 400px;
+}
+
+.menu_new_content{
+    display: flex;
+    gap: 35px;
+    padding: 80px 0;
+}
+.card{
+    width: 264px;
+
+    background: #2B4241;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.card div:first-child{
+    width: 100%;
+    margin-top: -40px;
+}
+.card h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.card p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 16px;
+}
+
+.card > button{
+    border: none;
+    width: 200px;
+    height: 48.3px;
+    background: #FF583E;
+    border-radius: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147.19%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.product_count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.product_count span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.product_count button{
+    background-color: transparent;
+    color: #FF583E;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    line-height: 23px;
+    text-align: center;
+
+
+}
+.menu_new_price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+
+}

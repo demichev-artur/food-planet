@@ -1,0 +1,75 @@
+.content{
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+}
+.content div img{
+    width: 85px;
+    height: 85px;
+    border-style: none;
+    outline-offset: 0;
+    border-radius: 50%;
+    background: #C4C4C4;
+}
+.reviews > h1{
+    margin-left: 400px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+
+
+    /* h1 */
+
+    color: #254F4C;
+}
+.content div{
+    width: 248px;
+    background: #FFFDFD;
+    border: 2px solid #1D3130;
+    border-radius: 40px;
+    text-align: center;
+    padding: 24px 16px;
+    /*box-sizing: border-box;*/
+}
+
+.content div h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* отзы name */
+    color: #3B7976;
+}
+
+.content div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    /* отзыы */
+
+    color: #061817;
+
+
+}
+
+.content div span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    /* отзы name */
+
+    color: #3B7976;
+
+}

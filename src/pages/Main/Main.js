@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import MenuNew from "../../components/MenuNew/MenuNew";
 import MenuProducts from "../../components/MenuProducts/MenuProducts";
 import Benefits from "./components/Benefits";
+import Reviews from "./components/Reviews/Reviews";
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <MenuNew/>
             <MenuProducts/>
             <Benefits/>
+            <Reviews/>
             <Footer/>
         </div>
     );

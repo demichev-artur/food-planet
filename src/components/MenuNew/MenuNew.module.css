@@ -135,6 +135,10 @@ nav h1 {
     cursor: pointer;
 }
 
+.product_count button img:hover{
+    fill: white;
+}
+
 .product_count button{
     cursor: pointer;
 }

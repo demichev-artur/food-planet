@@ -39,5 +39,5 @@ export const productsNew = [
             "                                соус чесночный, соус гриль,\n" +
             "                                кетчуп, майонез",
         productPrice: 200
-    },
+    }
 ]

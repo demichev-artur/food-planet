@@ -5,20 +5,20 @@ import {productsNew} from "../../contants/productsNew";
 import plus from '../../access/icons/plusIcon.svg';
 import minus from '../../access/icons/minusIcon.svg';
 
-const Test = props => {
+const Cards = props => {
     const [count, setCount] = useState(1);
 
     return(
         <div className={styles.card}>
 
             <div className={styles.product_img}>
-                <img src={props.name.productImg} alt=""/>
+                <img src={props.data.productImg} alt=""/>
             </div>
 
             <div className={styles.product_info}>
-                <h2>{props.name.productName}</h2>
-                <p>{props.name.productCompound}</p>
-                <h3 className={styles.menu_new_price}>{props.name.productPrice} сом</h3>
+                <h2>{props.data.productName}</h2>
+                <p>{props.data.productCompound}</p>
+                <h3 className={styles.menu_new_price}>{props.data.productPrice} сом</h3>
 
                 <div className={styles.product_count}>
                     <button onClick={ ()=>{if(count > 1){setCount(count-1)}}}><img src={minus} alt=""/></button>
@@ -35,7 +35,7 @@ const Test = props => {
 }
 
 const MenuNew = props => {
-    const cardsArray = productsNew.map((item,i) => <Test name={item} key={i}/>)
+    const cardsArray = productsNew.map((item,i) => <Cards data={item} key={i}/>);
 
     return (
         <section>

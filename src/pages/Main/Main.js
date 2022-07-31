@@ -11,7 +11,7 @@ const Main = () => {
         <div>
             <HeaderContent/>
             <MenuNew title="Новинки"/>
-            <MenuProducts/>
+            <MenuProducts title="Меню"/>
             <Benefits/>
             <Reviews/>
             <Footer/>

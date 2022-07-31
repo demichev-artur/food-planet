@@ -1,206 +1,66 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {NavLink} from "react-router-dom";
+import {products} from "../../contants/products";
 import styles from "../MenuProducts/MenuProducts.module.css";
-import burgerOne from "../../access/images/Tofu-Burger-1.png";
 import minus from "../../access/icons/minusIcon.svg";
 import plus from "../../access/icons/plusIcon.svg";
-import burgerTwo from "../../access/images/Tofu-Burger-2.png";
-import burgerTree from "../../access/images/Tofu-Burger-3.png";
-import burgerFour from "../../access/images/Tofu-Burger-4.png";
 
-const MenuProducts = () => {
-    return (
-        <div className={styles.menu_new}>
-            <div className={styles.menu_new_nav}>
-                <h1>Меню</h1>
 
-                <ul>
-                    <li>Пицца</li>
-                    <li>Бургер</li>
-                    <li>Суши</li>
-                    <li>Роллы</li>
-                    <li>Салаты</li>
-                    <li>Десерты</li>
-                    <li>Напитки</li>
-                </ul>
+const Cards = props => {
+    const [count, setCount] = useState(1);
+
+    return(
+        <div className={styles.card}>
+
+            <div className={styles.product_img}>
+                <img src={props.data.productImg} alt=""/>
             </div>
 
-            <div className={styles.menu_new_content}>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerOne} alt=""/>
-                    </div>
+            <div className={styles.product_info}>
+                <h2>{props.data.productName}</h2>
+                <p>{props.data.productCompound}</p>
+                <h3 className={styles.menu_new_price}>{props.data.productPrice} сом</h3>
 
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerTwo} alt=""/>
-
-                    </div>
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-                    <button>В корзину</button>
-
-
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerTree} alt=""/>
-
-                    </div>
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-
-
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerFour} alt=""/>
-                    </div>
-
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-
-
+                <div className={styles.product_count}>
+                    <button onClick={ ()=>{if(count > 1){setCount(count-1)}}}><img src={minus} alt=""/></button>
+                    <span>{count}</span>
+                    <button onClick={ ()=>{if(count < 99){ setCount(count+1)} }}><img src={plus} alt=""/></button>
                 </div>
 
-
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerOne} alt=""/>
-                    </div>
-
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerTwo} alt=""/>
-
-                    </div>
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-                    <button>В корзину</button>
-
-
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerTree} alt=""/>
-
-                    </div>
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-
-
-                </div>
-                <div className={styles.card}>
-                    <div>
-                        <img src={burgerFour} alt=""/>
-                    </div>
-
-                    <h2>Мексиканская</h2>
-                    <p>Булка, котлета,сыр, соленый огурец, лук, помидор,
-                        салат айсберг,
-                        соус чесночный, соус гриль,
-                        кетчуп, майонез</p>
-                    <h3 className={styles.menu_new_price}>200 сом</h3>
-
-                    <div className={styles.product_count}>
-                        <button><img src={minus} alt=""/></button>
-                        <span>1</span>
-                        <button><img src={plus} alt=""/></button>
-                    </div>
-
-                    <button>В корзину</button>
-
-
-                </div>
             </div>
-            <button className={styles.btn_open}>Показать ещё</button>
+
+            <button className={styles.btn_get_bundle}>В корзину</button>
+
         </div>
+    )
+}
 
+
+const MenuProducts = props => {
+    const cardsArray = products.map((item,i) => <Cards data={item} key={i}/>);
+
+    return (
+        <section>
+            <div className={styles.content}>
+                <nav>
+                    <h1>{props.title}</h1>
+                    <ul>
+                        <li><NavLink to="burger">Пицца</NavLink></li>
+                        <li><NavLink to="burger">Бургер</NavLink></li>
+                        <li><NavLink to="burger">Суши</NavLink></li>
+                        <li><NavLink to="burger">Роллы</NavLink></li>
+                        <li><NavLink to="burger">Салаты</NavLink></li>
+                        <li><NavLink to="burger">Десерты</NavLink></li>
+                        <li><NavLink to="burger">Напитки</NavLink></li>
+                    </ul>
+                </nav>
+
+                <div className={styles.products}>
+                    {cardsArray}
+                </div>
+
+            </div>
+        </section>
     );
 };
 

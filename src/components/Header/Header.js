@@ -3,14 +3,13 @@ import logo from "../../access/images/Logo_Header.png";
 import phoneIcon from "../../access/icons/phoneIconBlack.svg";
 import bundleIcon from "../../access/icons/bundleIconBlack.svg";
 import styles from './Header.module.css';
-import HeaderContent from "../HeaderContent/HeaderContent";
 
 const Header = () => {
     return (
         <>
             <header>
-                <img src={logo} alt=""/>
                 <ul>
+                    <img src={logo} alt=""/>
                     <li>Главная</li>
                     <li>Меню</li>
                     <li>Доставка</li>
@@ -18,9 +17,7 @@ const Header = () => {
                     <li><img src={phoneIcon} alt=""/>+996500405988</li>
                     <li><img src={bundleIcon} alt=""/><span className={styles.bundle_count}>1</span></li>
                 </ul>
-
             </header>
-            <HeaderContent/>
         </>
     );
 };

@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <div>
             <HeaderContent/>
-            <MenuNew/>
+            <MenuNew title="Новинки"/>
             <MenuProducts/>
             <Benefits/>
             <Reviews/>

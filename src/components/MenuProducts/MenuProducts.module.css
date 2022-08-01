@@ -136,6 +136,29 @@ nav h1 {
     cursor: pointer;
 }
 
+.btn_show_more{
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #FF583E;
+    border-radius: 40px;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147.19%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF583E;
+    cursor: pointer;
+}
+
+.btn_show_more:hover{
+    background-color: #FF583E;
+    color: #ffffff;
+}
+
 .product_count button img:hover{
     fill: white;
 }

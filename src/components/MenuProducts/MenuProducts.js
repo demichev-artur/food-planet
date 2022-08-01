@@ -58,7 +58,7 @@ const MenuProducts = props => {
                 <div className={styles.products}>
                     {cardsArray}
                 </div>
-
+                <button className={styles.btn_show_more}>Показать ещё</button>
             </div>
         </section>
     );

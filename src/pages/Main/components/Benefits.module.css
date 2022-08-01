@@ -1,6 +1,7 @@
 .benefits{
     display: flex;
     justify-content: center;
+
     flex-direction: column;
     max-width: 1165px;
     font-family: 'Roboto', serif;
@@ -23,8 +24,9 @@
 }
 .content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 45px;
     padding: 25px 0;
 }
 .content div{

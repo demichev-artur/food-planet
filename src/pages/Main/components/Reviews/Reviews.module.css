@@ -1,10 +1,13 @@
-.content{
+.content {
     display: flex;
     justify-content: center;
-
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 30px 0 70px 0;
+    font-family: 'Roboto', serif;
 }
-.content div img{
+
+.content div div > img {
     width: 85px;
     height: 85px;
     border-style: none;
@@ -12,64 +15,76 @@
     border-radius: 50%;
     background: #C4C4C4;
 }
-.reviews > h1{
-    margin-left: 400px;
-    font-family: 'Roboto';
+
+.img_block {
+    width: 100%;
+    height: 85px;
+}
+
+.reviews > h1 {
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
     line-height: 29px;
-
-
-    /* h1 */
-
     color: #254F4C;
 }
-.content div{
-    width: 248px;
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name img {
+    margin: 0;
+}
+
+.content > div {
+    box-sizing: border-box;
+    width: 250px;
     background: #FFFDFD;
     border: 2px solid #1D3130;
     border-radius: 40px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
     padding: 24px 16px;
     /*box-sizing: border-box;*/
 }
 
-.content div h3{
-    font-family: 'Roboto';
+.pen {
+    position: absolute;
+    width: 40px !important;
+    background-color: transparent;
+    border: none;
+    height: 40px !important;
+    top: -10px;
+    left: -10px;
+}
+
+.content div h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
-    /* отзы name */
     color: #3B7976;
+    margin: 0;
 }
 
-.content div p{
-    font-family: 'Roboto';
+.content div p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-
-    /* отзыы */
-
     color: #061817;
-
-
 }
 
-.content div span{
-    font-family: 'Roboto';
+.content div span {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-
-    /* отзы name */
-
     color: #3B7976;
-
 }

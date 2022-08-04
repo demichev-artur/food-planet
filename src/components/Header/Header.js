@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import logo from "../../access/images/Logo_White.svg";
+import logo from "../../access/images/Logo_Header.svg";
 import phoneIcon from "../../access/icons/phoneIconBlack.svg";
 import bundleIcon from "../../access/icons/bundleIconBlack.svg";
 import styles from './Header.module.css';

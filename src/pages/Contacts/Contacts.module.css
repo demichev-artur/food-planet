@@ -1,0 +1,29 @@
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.form{
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form input, .form textarea {
+    display: block;
+    width: 250px;
+    height: 25px;
+    margin: 10px 0;
+    border-radius: 5px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Benefits.module.css';
-import one from '../../../access/icons/deliveryIcon.svg';
-import two from '../../../access/icons/freshProductsIcon.svg';
-import tree from '../../../access/icons/menuIcon.svg';
-import four from '../../../access/icons/locationIcon.svg';
+import one from '../../../../access/icons/deliveryIcon.svg';
+import two from '../../../../access/icons/freshProductsIcon.svg';
+import tree from '../../../../access/icons/menuIcon.svg';
+import four from '../../../../access/icons/locationIcon.svg';
 
 const Benefits = () => {
     return (

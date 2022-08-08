@@ -1,57 +1,45 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 import styles from './Reviews.module.css';
 import penIconLeft from '../../../../access/icons/penLeftIcon.svg';
 import penIconRight from '../../../../access/icons/penRightIcon.svg';
 
 const Reviews = () => {
+    const navigate = useNavigate();
+
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        fetch(`http://localhost:3003/reviews`)
+            .then(response => {
+                if (response.status === 200){
+                    return response.json();
+                } else {
+                    navigate("/*");
+                }
+            })
+            .then(data => setReviews(data))
+    }, []);
+
+    let cards = reviews.map( item => (
+        <div>
+            <img className={styles.pen} src={penIconLeft} alt=""/>
+            <div className={styles.img_block}>
+                <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
+            </div>
+
+            <h3 className={styles.name}>{item.userName} <img src={penIconRight} alt=""/></h3>
+            <p>{item.review}</p>
+            <span>{item.reviewDate}</span>
+        </div>
+    ))
     return (
         <section>
             <div className={styles.reviews}>
 
                 <h1>Отзывы</h1>
                 <div className={styles.content}>
-                    <div>
-                        <img className={styles.pen} src={penIconLeft} alt=""/>
-                        <div className={styles.img_block}>
-                            <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
-                        </div>
-
-                        <h3 className={styles.name}>Сергей <img src={penIconRight} alt=""/></h3>
-                        <p>Большое спасибо! 5 пицц доставили даже быстрее чем планировалось. Пицца была горячая и всему
-                            коллективу понравилась! День Рождения прошел отлично! :)</p>
-                        <span>02.07.2020</span>
-                    </div>
-                    <div>
-                        <img className={styles.pen} src={penIconLeft} alt=""/>
-                        <div className={styles.img_block}>
-                            <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
-                        </div>
-
-                        <h3 className={styles.name}>Сергей <img src={penIconRight} alt=""/></h3>
-                        <p>Очень вкусные роллы Хаки, всем рекомендую! заказали в первый раз и теперь станем постоянными клиентами! Спасибо!</p>
-                        <span>02.07.2020</span>
-                    </div>
-                    <div>
-                        <img className={styles.pen} src={penIconLeft} alt=""/>
-                        <div className={styles.img_block}>
-                            <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
-                        </div>
-
-                        <h3 className={styles.name}>Сергей <img src={penIconRight} alt=""/></h3>
-                        <p>Очень избирателен в еде, и Уже в третий раз не разочаровываюсь в Food Planet, советую всем! Жена тоже довольна!</p>
-                        <span>02.07.2020</span>
-                    </div>
-                    <div>
-                        <img className={styles.pen} src={penIconLeft} alt=""/>
-                        <div className={styles.img_block}>
-                            <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
-                        </div>
-
-                        <h3 className={styles.name}>Сергей <img src={penIconRight} alt=""/></h3>
-                        <p>Хочу поблагодарить за бургер !Очень вкусненький в меру остренький)
-                            Спасибо,удивили!)</p>
-                        <span>02.07.2020</span>
-                    </div>
+                    {cards}
                 </div>
             </div>
         </section>

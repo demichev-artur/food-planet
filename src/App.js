@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import NotFound from "./pages/NotFound/NotFound";
 import Contacts from "./pages/Contacts/Contacts";
 import Delivery from "./pages/Delivery/Delivery";
+import Basket from "./pages/Basket/Basket";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/" element={<Main/>}/>
                     <Route path="/delivery" element={<Delivery/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
+                    <Route path="/basket" element={<Basket/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>

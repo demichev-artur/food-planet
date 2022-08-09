@@ -10,7 +10,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3003/reviews`)
+        fetch(`http://localhost:3001/reviews`)
             .then(response => {
                 if (response.status === 200){
                     return response.json();

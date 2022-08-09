@@ -18,7 +18,7 @@ const Header = () => {
                 <li><NavLink className={setActive} to="/contacts">Контакты</NavLink></li>
                 <li><a href="tel:+996500405988"><img src={phoneIcon} alt=""/>+996500405988</a></li>
                 <li className={styles.bundle}>
-                    <NavLink className={setActive} to="/bundle"><img src={bundleIcon} alt=""/>
+                    <NavLink className={setActive} to="/basket"><img src={bundleIcon} alt=""/>
                     <span className={styles.bundle_count}>0</span>
                     </NavLink>
                 </li>

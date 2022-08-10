@@ -6,17 +6,22 @@ import NotFound from "./pages/NotFound/NotFound";
 import Contacts from "./pages/Contacts/Contacts";
 import Delivery from "./pages/Delivery/Delivery";
 import Basket from "./pages/Basket/Basket";
+import Admin from "./pages/Admin/Admin";
 
 function App() {
     return (
         <>
             <BrowserRouter>
-                <Header/>
                 <Routes>
-                    <Route path="/" element={<Main/>}/>
-                    <Route path="/delivery" element={<Delivery/>}/>
-                    <Route path="/contacts" element={<Contacts/>}/>
-                    <Route path="/basket" element={<Basket/>}/>
+                    <Route path="/" element={<Header/>}>
+                        <Route index element={<Main/>}/>
+                        <Route path="delivery" element={<Delivery/>}/>
+                        <Route path="contacts" element={<Contacts/>}/>
+                        <Route path="basket" element={<Basket/>}/>
+                    </Route>
+
+                    <Route path="/admin" element={<Admin/>}/>
+
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>

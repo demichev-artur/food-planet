@@ -123,9 +123,6 @@
     background-color: rgba(159, 162, 180, 0.08);
 }
 
-table td {
-    border: 1px solid black;
-}
 
 .table_item {
     width: 1200px;
@@ -223,4 +220,13 @@ table td {
 .table button:hover {
     background-color: #385a56;
     cursor: pointer;
+}
+
+.active li{
+    border-left: 3px solid #DDE2FF;
+    background-color: rgba(159, 162, 180, 0.08);
+}
+
+.sidebar ul a{
+    text-decoration: none;
 }

@@ -18,8 +18,45 @@ const Delivery = () => {
                     </div>
                 </div>
                 <div className={styles.del}>
-                    <h2>Как работает доставка</h2>
-                    <img src={imageTwo} alt=""/>
+                    <div className={styles.how_work}>
+                        <h2>Как работает доставка</h2>
+                        <div>
+                            <span>1</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-pc.svg?1660044311" alt=""/>
+                            <p>НЕСКОЛЬКО КЛИКОВ И ЗАКАЗ ГОТОВ</p>
+                        </div>
+
+                        <div>
+                            <span>2</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-support.svg?1660044311" alt=""/>
+                            <p>ОПЕРАТОР ПОДТВЕРДИТ ЗАКАЗ</p>
+                        </div>
+
+                        <div>
+                            <span>3</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-cafe.svg?1660044311" alt=""/>
+                            <p>ЗАВЕДЕНИЕ ПРИГОТОВИТ ЗАКАЗ</p>
+                        </div>
+
+                        <div>
+                            <span>3</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-moto.svg?1660044311" alt=""/>
+                            <p>КУРЬЕР ЗАБИРАЕТ ЗАКАЗ</p>
+                        </div>
+
+                        <div>
+                            <span>4</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-motoride.svg?1660044311" alt=""/>
+                            <p>КУРЬЕР ДОСТАВЛЯЕТ ЗАКАЗ</p>
+                        </div>
+
+                        <div>
+                            <span>5</span>
+                            <img src="https://nambafood.kg/new_design/static/img/icons/icon-home.svg?1660044311" alt=""/>
+                            <p>ПОЛУЧЕНИЕ И ОПЛАТА ЗАКАЗА</p>
+                        </div>
+                    </div>
+
                     <h2>Доставка в самые короткие сроки</h2>
                     <img src={imageTree} alt=""/>
                 </div>

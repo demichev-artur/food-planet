@@ -21,7 +21,7 @@ const AdminSidebar = () => {
             </div>
 
             <ul>
-                <NavLink className={setActive} to="/admin">
+                <NavLink className={setActive} to="main">
                     <li><img src={listIcon1} alt=""/>Главная</li>
                 </NavLink>
                 <NavLink className={setActive} to="orders">

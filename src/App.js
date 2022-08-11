@@ -27,7 +27,7 @@ function App() {
                     </Route>
 
                     <Route path="admin" element={<Admin/>}>
-                        <Route index element={<AdminMain/>}/>
+                        <Route path="main" element={<AdminMain/>}/>
                         <Route path="orders" element={<AdminOrders/>}/>
                         <Route path="menu" element={<AdminMenu/>}/>
                         <Route path="contacts" element={<AdminContacts/>}/>

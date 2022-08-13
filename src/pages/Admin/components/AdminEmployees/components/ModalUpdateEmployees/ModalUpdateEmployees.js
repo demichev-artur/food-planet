@@ -50,6 +50,7 @@ const ModalUpdateEmployees = ({active, setActive, id}) => {
             })
 
         setActive(false);
+        window.location.reload();
     }
     useEffect(getEmployeeById, [id]);
 

@@ -7,8 +7,8 @@ import ModalUpdateEmployees from "./components/ModalUpdateEmployees/ModalUpdateE
 
 const AdminEmployees = () => {
     const [employees, setEmployees] = useState([]);
-    const [modalActive, setModalActive] = useState(false);
-    const [modalActiveUPD, setModalActiveUPD] = useState(false);
+    const [modalActiveCreate, setModalActiveCreate] = useState(false);
+    const [modalActiveUpdate, setModalActiveUpdate] = useState(false);
     const [id, setId] = useState(1);
 
     const deleteEmployee = (e) => {
@@ -28,11 +28,13 @@ const AdminEmployees = () => {
                         toast.error('Какая-то ошибка.. Статус: ' + response.status);
                     }
                 })
+            window.location.reload();
         }
+
     }
 
     const updateEmployee = (e) => {
-        setModalActiveUPD(true);
+        setModalActiveUpdate(true);
         setId(e.target.name);
     }
 
@@ -43,6 +45,7 @@ const AdminEmployees = () => {
                     return response.json();
                 } else {
                     toast.error('Произошла ошибка загрузки данных: ' + response.status);
+
                 }
             })
             .then(data => setEmployees(data))
@@ -74,12 +77,12 @@ const AdminEmployees = () => {
         <>
             <div className={styles.container}>
                 <div className={styles.btn}>
-                    <button onClick={() => setModalActive(true)}>Добавить сотрудника</button>
+                    <button onClick={() => setModalActiveCreate(true)}>Добавить сотрудника</button>
                 </div>
                 {cards}
             </div>
-            <ModalAddEmployees active={modalActive} setActive={setModalActive}/>
-            <ModalUpdateEmployees active={modalActiveUPD} setActive={setModalActiveUPD} id={id}/>
+            <ModalAddEmployees active={modalActiveCreate} setActive={setModalActiveCreate}/>
+            <ModalUpdateEmployees active={modalActiveUpdate} setActive={setModalActiveUpdate} id={id}/>
         </>
     );
 };

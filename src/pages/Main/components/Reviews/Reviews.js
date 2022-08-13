@@ -5,9 +5,8 @@ import penIconLeft from '../../../../access/icons/penLeftIcon.svg';
 import penIconRight from '../../../../access/icons/penRightIcon.svg';
 
 const Reviews = () => {
-    const navigate = useNavigate();
-
     const [reviews, setReviews] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(`http://localhost:3001/reviews`)
@@ -22,17 +21,19 @@ const Reviews = () => {
     }, []);
 
     let cards = reviews.map( item => (
-        <div>
+        <div key={item.id}>
             <img className={styles.pen} src={penIconLeft} alt=""/>
             <div className={styles.img_block}>
                 <img src="https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png" alt=""/>
+                <h3 className={styles.name}>{item.userName} <img src={penIconRight} alt=""/></h3>
             </div>
 
-            <h3 className={styles.name}>{item.userName} <img src={penIconRight} alt=""/></h3>
+
             <p>{item.review}</p>
             <span>{item.reviewDate}</span>
         </div>
-    ))
+    ));
+
     return (
         <section>
             <div className={styles.reviews}>
@@ -43,7 +44,6 @@ const Reviews = () => {
                 </div>
             </div>
         </section>
-
     );
 };
 

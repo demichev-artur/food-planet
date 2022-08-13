@@ -1,13 +1,38 @@
 import React, {useEffect, useState} from 'react';
-import styles from "../../Admin.module.css";
+import styles from "./AdminReviews.module.css";
+import toast from "react-hot-toast";
+import ModalAddReviews from "./components/ModalAddReviews/ModalAddReviews";
 
 const AdminReviews = () => {
+    const [modalActiveCreate, setModalActiveCreate] = useState(false);
     const [reviews, setReviews] = useState([]);
+
+    const reviewDelete = (e) => {
+        if (window.confirm('Вы действительно хотите удалить?')) {
+            const id = e.target.id;
+            const url = 'http://localhost:3001/reviews/' + id;
+
+            const options = {
+                method: 'DELETE'
+            }
+
+            fetch(url, options)
+                .then(response => {
+                    if (response.ok) {
+                        toast.success('Успешно удалено');
+                    } else {
+                        toast.error('Какая-то ошибка.. Статус: ' + response.status);
+                    }
+                })
+
+            window.location.reload();
+        }
+    }
 
     useEffect(() => {
         fetch(`http://localhost:3001/reviews`)
             .then(response => {
-                if (response.status === 200){
+                if (response.status === 200) {
                     return response.json();
                 } else {
 
@@ -16,39 +41,31 @@ const AdminReviews = () => {
             .then(data => setReviews(data))
     }, []);
 
-    let tableItems = reviews.map( item => (
-        <div className={styles.table_item}>
+    let tableItems = reviews.map(item => (
+        <div key={item.id} className={styles.table_item}>
+            <div>{item.userName}</div>
+            <div>{item.review}</div>
             <div>
-                {item.userName}
-            </div>
-            <div>
-                {item.review}
-            </div>
-            <div>
-                <button>Удалить отзыв</button>
-                <button>Редактировать</button>
+                <button id={item.id} onClick={reviewDelete}>Удалить отзыв</button>
             </div>
         </div>))
 
     return (
-        <div className={styles.table}>
-            <div className={styles.btn}>
-                <div className={styles.inputs}>
-                    <input id="userName" type="text" placeholder="Имя:"/>
-                    <input id="userProfileImg" type="text" placeholder="Ссылка фото профиля:"/>
-                    <input id="review" type="text" placeholder="Отзыв"/>
-                    <input id="reviewDate" type="text" placeholder="Дата публикации"/>
+        <div className={styles.container}>
+            <div className={styles.table}>
+                <div className={styles.btn}>
+                    <button onClick={()=> setModalActiveCreate(true)}>Добавить отзыв</button>
                 </div>
-
-                <button>Добавить отзыв</button>
+                <div className={styles.table_item}>
+                    <div>Имя пользователя</div>
+                    <div>Отзыв</div>
+                    <div>Действия</div>
+                </div>
+                {tableItems}
             </div>
-            <div className={styles.table_item}>
-                <div>Имя пользователя</div>
-                <div>Отзыв</div>
-                <div>Действия</div>
-            </div>
-            {tableItems}
+            <ModalAddReviews active={modalActiveCreate} setActive={setModalActiveCreate}/>
         </div>
+
     );
 };
 

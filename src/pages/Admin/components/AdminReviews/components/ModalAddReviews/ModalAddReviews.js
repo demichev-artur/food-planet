@@ -1,16 +1,15 @@
 import React from 'react';
+import styles from './ModalAddReviews.module.css';
 import {toast} from "react-hot-toast";
-import styles from './ModalAddEmployees.module.css';
 
-const ModalAddEmployees = ({active, setActive}) => {
-    const addEmployees = (e) => {
+const ModalAddReviews = ({active, setActive}) => {
+
+    const addReview = (e) => {
         const data = {
-            name: e.currentTarget.name.value,
-            birthday: e.currentTarget.birthday.value,
-            img: e.currentTarget.img_url.value,
-            position: e.currentTarget.position.value,
-            phone: e.currentTarget.phone.value
-
+            userName: e.currentTarget.name.value,
+            userProfileImg: e.currentTarget.img_url.value,
+            review: e.currentTarget.comment.value,
+            reviewDate: e.currentTarget.datePost.value
         }
         const options = {
             method: "POST",
@@ -20,7 +19,7 @@ const ModalAddEmployees = ({active, setActive}) => {
             body: JSON.stringify(data)
         }
 
-        const url = 'http://localhost:3001/employees';
+        const url = 'http://localhost:3001/reviews';
 
         fetch(url, options)
             .then(response => {
@@ -33,17 +32,18 @@ const ModalAddEmployees = ({active, setActive}) => {
 
         setActive(false);
         window.location.reload();
-    };
+    }
 
     return (
         <div className={active ? styles.modal_active : styles.modal}>
             <div className={styles.modal_content}>
                 <img className={styles.close_icon} src="https://cdn-icons-png.flaticon.com/512/70/70091.png" alt=""
                      onClick={() => setActive(false)}/>
-                <h2>Добавление сотрудника</h2>
-                <form onSubmit={addEmployees} action="javascript:void(0)">
+                <h2>Добавление отзыва</h2>
+
+                <form onSubmit={addReview} action="javascript:void(0)">
                     <div>
-                        <label htmlFor="name">ФИО</label>
+                        <label htmlFor="name">Имя пользователя</label>
                         <input required type="text" name="name"/>
                     </div>
 
@@ -53,18 +53,13 @@ const ModalAddEmployees = ({active, setActive}) => {
                     </div>
 
                     <div>
-                        <label htmlFor="position">Должность</label>
-                        <input required type="text" name="position"/>
+                        <label htmlFor="comment">Отзыв</label>
+                        <input required type="text" name="comment"/>
                     </div>
 
                     <div>
-                        <label htmlFor="birthday">Дата рождения</label>
-                        <input type="text" name="birthday"/>
-                    </div>
-
-                    <div>
-                        <label htmlFor="phone">Номер телефона</label>
-                        <input type="text" name="phone"/>
+                        <label htmlFor="datePost">Дата отзыва</label>
+                        <input type="text" name="datePost"/>
                     </div>
 
                     <button>Добавить</button>
@@ -74,4 +69,4 @@ const ModalAddEmployees = ({active, setActive}) => {
     );
 };
 
-export default ModalAddEmployees;
+export default ModalAddReviews;

@@ -14,27 +14,30 @@ const ModalAddEmployees = ({active, setActive}) => {
         }
         const options = {
             method: "POST",
-            headers:{
-                "Content-Type":"application/json"
+            headers: {
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         }
 
-        const url = 'http://localhost:3001/employees' ;
+        const url = 'http://localhost:3001/employees';
 
         fetch(url, options)
             .then(response => {
-                if (response.ok){
+                if (response.ok) {
                     toast.success('Товар успешно добавлен');
                 } else {
                     toast.error('Что-то произошло.. Статус ошибки:' + response.status);
                 }
             })
+
+        setActive(false);
     }
     return (
         <div className={active ? styles.modal_active : styles.modal}>
             <div className={styles.modal_content}>
-                <img className={styles.close_icon} src="https://cdn-icons-png.flaticon.com/512/70/70091.png" alt="" onClick={() => setActive(false)}/>
+                <img className={styles.close_icon} src="https://cdn-icons-png.flaticon.com/512/70/70091.png" alt=""
+                     onClick={() => setActive(false)}/>
                 <h2>Добавление сотрудника</h2>
                 <form onSubmit={addEmployees} action="javascript:void(0)">
                     <div>

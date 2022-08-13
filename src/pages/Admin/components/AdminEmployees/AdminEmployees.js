@@ -1,15 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import styles from './AdminEmployees.module.css';
 import ModalAddEmployees from "./components/ModalAddEmployees/ModalAddEmployees";
-import {toast} from "react-hot-toast";
+import toast from "react-hot-toast";
+import ModalUpdateEmployees from "./components/ModalUpdateEmployees/ModalUpdateEmployees";
 
 
 const AdminEmployees = () => {
     const [employees, setEmployees] = useState([]);
     const [modalActive, setModalActive] = useState(false);
-    toast('fasafs');
+    const [modalActiveUPD, setModalActiveUPD] = useState(false);
+    const [id, setId] = useState(1);
+
     const deleteEmployee = (e) => {
-        
         if (window.confirm('Вы действительно хотите удалить?')) {
             const id = e.target.name;
             const url = 'http://localhost:3001/employees/' + id;
@@ -29,13 +31,18 @@ const AdminEmployees = () => {
         }
     }
 
+    const updateEmployee = (e) => {
+        setModalActiveUPD(true);
+        setId(e.target.name);
+    }
+
     useEffect(() => {
         fetch(`http://localhost:3001/employees`)
             .then(response => {
                 if (response.status === 200) {
                     return response.json();
                 } else {
-                    toast.error('Произошла ошибка загрузки данных: ' + response.status)
+                    toast.error('Произошла ошибка загрузки данных: ' + response.status);
                 }
             })
             .then(data => setEmployees(data))
@@ -56,7 +63,7 @@ const AdminEmployees = () => {
             </div>
 
             <div className={styles.buttons}>
-                <button className={styles.btn_update}>Редактировать</button>
+                <button className={styles.btn_update} name={item.id} onClick={updateEmployee}>Редактировать</button>
                 <button className={styles.btn_delete} name={item.id} onClick={deleteEmployee}>Удалить</button>
             </div>
 
@@ -72,6 +79,7 @@ const AdminEmployees = () => {
                 {cards}
             </div>
             <ModalAddEmployees active={modalActive} setActive={setModalActive}/>
+            <ModalUpdateEmployees active={modalActiveUPD} setActive={setModalActiveUPD} id={id}/>
         </>
     );
 };

@@ -17,7 +17,6 @@ import {useState} from "react";
 
 function App() {
     const [title, setTitle] = useState("Главная");
-
     return (
         <BrowserRouter>
             <Routes>
@@ -29,9 +28,10 @@ function App() {
                 </Route>
 
                 <Route path="admin" element={<Admin setTitle={setTitle} title={title}/>}>
+
                     <Route path="main" element={<AdminMain/>}/>
                     <Route path="orders" element={<AdminOrders/>}/>
-                    <Route path="menu" element={<AdminMenu title={title}/>}/>
+                    <Route path="menu" element={<AdminMenu/>}/>
                     <Route path="contacts" element={<AdminContacts/>}/>
                     <Route path="reviews" element={<AdminReviews/>}/>
                     <Route path="employees" element={<AdminEmployees/>}/>

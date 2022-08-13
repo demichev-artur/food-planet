@@ -8,7 +8,6 @@ const Admin = (props) => {
 
     return (
         <div className={styles.container}>
-
            <AdminSidebar setTitle={props.setTitle}/>
 
             <div className={styles.container_child}>

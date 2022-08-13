@@ -7,6 +7,7 @@
 .card {
     margin: 15px 35px;
     max-width: 500px;
+    min-height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +36,7 @@
 }
 .image img {
     width: 100%;
+
 }
 .title {
     background-color: #254F4C;
@@ -114,3 +116,4 @@
     background-color: #ff4326;
     cursor: pointer;
 }
+

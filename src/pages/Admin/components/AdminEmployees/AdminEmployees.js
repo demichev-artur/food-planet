@@ -1,23 +1,48 @@
 import React, {useEffect, useState} from 'react';
 import styles from './AdminEmployees.module.css';
+import ModalAddEmployees from "./components/ModalAddEmployees/ModalAddEmployees";
+import {toast} from "react-hot-toast";
+
 
 const AdminEmployees = () => {
     const [employees, setEmployees] = useState([]);
+    const [modalActive, setModalActive] = useState(false);
+    toast('fasafs');
+    const deleteEmployee = (e) => {
+        
+        if (window.confirm('Вы действительно хотите удалить?')) {
+            const id = e.target.name;
+            const url = 'http://localhost:3001/employees/' + id;
+
+            const options = {
+                method: 'DELETE'
+            }
+
+            fetch(url, options)
+                .then(response => {
+                    if (response.ok) {
+                        toast.success('Успешно удалено');
+                    } else {
+                        toast.error('Какая-то ошибка.. Статус: ' + response.status);
+                    }
+                })
+        }
+    }
 
     useEffect(() => {
         fetch(`http://localhost:3001/employees`)
             .then(response => {
-                if (response.status === 200){
+                if (response.status === 200) {
                     return response.json();
                 } else {
-
+                    toast.error('Произошла ошибка загрузки данных: ' + response.status)
                 }
             })
             .then(data => setEmployees(data))
     }, []);
 
-    const cards = employees.map( item => (
-        <div className={styles.card}>
+    const cards = employees.map(item => (
+        <div className={styles.card} key={item.id}>
             <h4 className={styles.title}>{item.name}</h4>
             <div>
                 <div className={styles.image}>
@@ -32,20 +57,22 @@ const AdminEmployees = () => {
 
             <div className={styles.buttons}>
                 <button className={styles.btn_update}>Редактировать</button>
-                <button className={styles.btn_delete}>Удалить</button>
+                <button className={styles.btn_delete} name={item.id} onClick={deleteEmployee}>Удалить</button>
             </div>
 
         </div>
-    ))
+    ));
 
     return (
-        <div className={styles.container}>
-            <div className={styles.btn}>
-                <button>Добавить сотрудника</button>
+        <>
+            <div className={styles.container}>
+                <div className={styles.btn}>
+                    <button onClick={() => setModalActive(true)}>Добавить сотрудника</button>
+                </div>
+                {cards}
             </div>
-            {cards}
-        </div>
-
+            <ModalAddEmployees active={modalActive} setActive={setModalActive}/>
+        </>
     );
 };
 

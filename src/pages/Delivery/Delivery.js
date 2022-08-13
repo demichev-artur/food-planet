@@ -3,14 +3,19 @@ import styles from './Delivery.module.css';
 import image from '../../access/images/devilery_image.png';
 import imageTwo from '../../access/images/del.png';
 import imageTree from '../../access/images/del1.png';
+import {toast, Toaster} from "react-hot-toast";
 const Delivery = () => {
+
+    const text = () => {
+        toast.success('error');
+    }
     return (
         <div className={styles.container}>
             <div className={styles.content}>
                 <div className={styles.block}>
                     <div>
                         <h1>Доставка вкусной еды до 30 минут + напиток в подарок!</h1>
-                        <button>Оформить доставку</button>
+                        <button onClick={()=> text}>Оформить доставку</button>
                     </div>
 
                     <div className={styles.image}>

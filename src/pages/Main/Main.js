@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews/Reviews";
 import HeaderContent from "../../components/HeaderContent/HeaderContent";
 
 const Main = () => {
+
     return (
         <div>
             <HeaderContent/>

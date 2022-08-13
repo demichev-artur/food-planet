@@ -1,127 +1,34 @@
 .container {
     height: 100vh;
     display: flex;
-    /*flex-wrap: wrap;*/
-}
-
-
-.sidebar {
-    height: 100%;
-    width: 255px;
-    background-color: #363740;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 15px 0;
-    margin: 0;
+    overflow-y:hidden;
 }
 
 .content {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    height: calc(100vh - 150px);
+    gap: 20px;
+    padding: 20px 0;
+    overflow: auto!important;
+    -ms-overflow-style: none;
 }
 
-.content_own {
+.content::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.container_child {
     width: 100%;
 }
 
-.logo p {
 
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-    color: #A4A6B3;
-    opacity: 0.7;
-}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    align-items: center;
-}
 
-.header div {
-    display: flex;
-    gap: 10px;
-}
 
-.header button {
-    border: none;
-    background-color: transparent;
-}
-
-.header h1 {
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.3px;
-    color: #252733;
-
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-}
-
-.profile p {
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #252733;
-
-}
-
-.icons {
-    border-right: 1px solid #DFE0EB;
-}
-
-.sidebar ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.sidebar ul li {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    list-style: none;
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #A4A6B3;
-    height: 55px;
-    padding-left: 30px;
-    box-sizing: border-box;
-}
-
-.sidebar ul li:hover {
-    cursor: pointer;
-    border-left: 3px solid #DDE2FF;
-    background-color: rgba(159, 162, 180, 0.08);
-}
 
 
 .table_item {
@@ -145,10 +52,11 @@
 
 .table_item div:last-child {
     width: 200px;
+    text-align: center;
 }
 
 .table_item div button {
-    height: 25px;
+    margin: 10px;
     border: none;
     background-color: #2B4241;
     border-radius: 100px;
@@ -220,13 +128,4 @@
 .table button:hover {
     background-color: #385a56;
     cursor: pointer;
-}
-
-.active li{
-    border-left: 3px solid #DDE2FF;
-    background-color: rgba(159, 162, 180, 0.08);
-}
-
-.sidebar ul a{
-    text-decoration: none;
 }

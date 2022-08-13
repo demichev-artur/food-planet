@@ -1,0 +1,116 @@
+.container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    margin: 15px 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /*border: 5px solid #254F4C;*/
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 20px 40px;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1D3130;
+}
+.card div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.image {
+    width: 350px!important;
+}
+.image img {
+    width: 100%;
+}
+.title {
+    background-color: #254F4C;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 15px;
+    width: 100%;
+    margin: 0 0 5px;
+}
+.info {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start!important;
+    padding: 0 15px;
+    /*justify-content: center;*/
+}
+.info h5 {
+    /*width: 100%;*/
+    margin: 10px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.btn_update {
+    border: none;
+    background-color: #254F4C;
+    border-radius: 15px;
+    height: 35px;
+    color: white;
+    padding: 5px 25px;
+    width: 70%;
+}
+.btn_update:hover {
+    cursor: pointer;
+    background-color: #356f69;
+}
+.btn_delete {
+    border: none;
+    background-color: #254F4C;
+    border-radius: 15px;
+    height: 35px;
+    color: white;
+    padding: 5px 10px;
+    width: 30%;
+}
+.btn_delete:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0 60px;
+}
+
+.btn button {
+    padding: 0 30px;
+    height: 40px;
+    border: none;
+    background-color: #FF583E;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn button:hover {
+    background-color: #ff4326;
+    cursor: pointer;
+}

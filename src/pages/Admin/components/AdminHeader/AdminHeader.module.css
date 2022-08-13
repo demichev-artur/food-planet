@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+.header div {
+    display: flex;
+    gap: 10px;
+}
+
+.header button {
+    border: none;
+    background-color: transparent;
+}
+
+.header button:hover, .header img:hover {
+    cursor: pointer;
+}
+
+.header p {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.header h1 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #252733;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile p {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+.icons {
+    border-right: 1px solid #DFE0EB;
+}

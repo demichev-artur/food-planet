@@ -4,16 +4,21 @@ import styles from './Admin.module.css';
 import AdminSidebar from "./components/AdminSidebar/AdminSidebar";
 import AdminHeader from "./components/AdminHeader/AdminHeader";
 
-const Admin = () => {
+const Admin = (props) => {
 
     return (
         <div className={styles.container}>
-           <AdminSidebar/>
-            <div className={styles.content_own}>
-               <AdminHeader/>
+
+           <AdminSidebar setTitle={props.setTitle}/>
+
+            <div className={styles.container_child}>
+
+               <AdminHeader title={props.title}/>
+
                 <div className={styles.content}>
                     <Outlet/>
                 </div>
+
             </div>
         </div>
 

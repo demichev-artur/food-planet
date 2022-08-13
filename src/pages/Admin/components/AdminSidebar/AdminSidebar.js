@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../Admin.module.css";
+import styles from './AdminSidebar.module.css';
 import logo from "../../../../access/icons/logoAdmin.svg";
 import {NavLink} from "react-router-dom";
 import listIcon1 from "../../../../access/icons/sidebar/list/1. overview.svg";
@@ -8,9 +8,8 @@ import listIcon3 from "../../../../access/icons/sidebar/list/3. ideas.svg";
 import listIcon4 from "../../../../access/icons/sidebar/list/4. contacts.svg";
 import listIcon5 from "../../../../access/icons/sidebar/list/5. agents.svg";
 import listIcon6 from "../../../../access/icons/sidebar/list/6. articles.svg";
-import Admin from "../../Admin";
 
-const AdminSidebar = () => {
+const AdminSidebar = (props) => {
     const setActive = ({isActive}) => isActive ? styles.active : "";
 
     return (
@@ -21,22 +20,22 @@ const AdminSidebar = () => {
             </div>
 
             <ul>
-                <NavLink className={setActive} to="main">
+                <NavLink className={setActive} to="main" onClick={()=>props.setTitle("Главная")}>
                     <li><img src={listIcon1} alt=""/>Главная</li>
                 </NavLink>
-                <NavLink className={setActive} to="orders">
+                <NavLink className={setActive} to="orders" onClick={()=>props.setTitle("Заказы")}>
                     <li><img src={listIcon2} alt=""/>Заказы</li>
                 </NavLink>
-                <NavLink className={setActive} to="menu">
+                <NavLink className={setActive} to="menu" onClick={()=>props.setTitle("Меню")}>
                     <li><img src={listIcon3} alt=""/>Меню</li>
                 </NavLink>
-                <NavLink className={setActive} to="contacts">
+                <NavLink className={setActive} to="contacts" onClick={()=>props.setTitle("Контакты")}>
                     <li><img src={listIcon4} alt=""/>Контакты</li>
                 </NavLink>
-                <NavLink className={setActive} to="reviews">
+                <NavLink className={setActive} to="reviews" onClick={()=>props.setTitle("Отзывы")}>
                     <li><img src={listIcon5} alt=""/>Отзывы</li>
                 </NavLink>
-                <NavLink className={setActive} to="employees">
+                <NavLink className={setActive} to="employees" onClick={()=>props.setTitle("Сотрудники")}>
                     <li><img src={listIcon6} alt=""/>Сотрудники</li>
                 </NavLink>
 

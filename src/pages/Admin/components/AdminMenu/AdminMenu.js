@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AdminMenu = () => {
+const AdminMenu = (props) => {
     return (
         <div>
-            <h1>Меню</h1>
+            <h1>{props.title}</h1>
         </div>
     );
 };

@@ -26,6 +26,7 @@ const AdminReviews = () => {
             </div>
             <div>
                 <button>Удалить отзыв</button>
+                <button>Редактировать</button>
             </div>
         </div>))
 

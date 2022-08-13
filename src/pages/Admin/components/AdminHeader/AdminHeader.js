@@ -1,24 +1,23 @@
 import React from 'react';
-import styles from "../../Admin.module.css";
+import styles from "./AdminHeader.module.css";
 import searchIcon from "../../../../access/icons/search.svg";
 import notifiIcon from "../../../../access/icons/new.svg";
 import photo from "../../../../access/icons/photo.png";
 
-const AdminHeader = () => {
+const AdminHeader = (props) => {
     return (
         <div className={styles.header}>
-            <h1>Главная</h1>
+            <h1>{props.title}</h1>
+
             <div className={styles.profile}>
                 <div className={styles.icons}>
                     <button><img src={searchIcon} alt=""/></button>
                     <button><img src={notifiIcon} alt=""/></button>
                 </div>
 
-                <p>
-                    Jones Ferdinand
-                </p>
-                <img src={photo} alt=""/>
+                <p>Jones Ferdinand</p>
 
+                <img src={photo} alt=""/>
             </div>
         </div>
     );

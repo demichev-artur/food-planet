@@ -59,32 +59,34 @@
 .image_img {
     width: 100%;
 }
-.del {
-    /*display: flex;*/
-    text-align: center;
 
-}
 .how_work {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /*max-width: 1200px;*/
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 !important;
 }
+
 .how_work h2 {
     width: 100%;
     text-align: center;
 
 }
+
 .how_work div img {
     width: 100px;
 }
+
 .how_work div {
     display: flex;
     align-items: center;
-    width: 200px;
-    margin: 30px 150px;
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 15px;
+    border: 0.5px solid gray;
 }
 
 .how_work div p {
@@ -94,6 +96,32 @@
 .how_work div span {
     margin: 0 10px;
     padding: 15px;
-    border-radius: 35%;
+    border-radius: 15px;
+    background-color: #254F4C;
+    color: white;
+}
+
+.how_pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how_pay div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    width: 600px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 15px;
     border: 0.5px solid gray;
+}
+
+.how_pay p {
+    font-size: 14px;
+    text-transform: uppercase;
 }

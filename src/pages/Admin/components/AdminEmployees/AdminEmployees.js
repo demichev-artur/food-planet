@@ -26,9 +26,9 @@ const AdminEmployees = () => {
                         toast.success('Успешно удалено');
                     } else {
                         toast.error('Какая-то ошибка.. Статус: ' + response.status);
+
                     }
                 })
-            window.location.reload();
         }
 
     }
@@ -45,11 +45,12 @@ const AdminEmployees = () => {
                     return response.json();
                 } else {
                     toast.error('Произошла ошибка загрузки данных: ' + response.status);
-
+                    return [{}];
                 }
             })
             .then(data => setEmployees(data))
     }, []);
+
 
     const cards = employees.map(item => (
         <div className={styles.card} key={item.id}>
@@ -72,6 +73,7 @@ const AdminEmployees = () => {
 
         </div>
     ));
+
 
     return (
         <>

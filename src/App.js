@@ -28,7 +28,6 @@ function App() {
                 </Route>
 
                 <Route path="admin" element={<Admin setTitle={setTitle} title={title}/>}>
-
                     <Route path="main" element={<AdminMain/>}/>
                     <Route path="orders" element={<AdminOrders/>}/>
                     <Route path="menu" element={<AdminMenu/>}/>

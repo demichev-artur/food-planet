@@ -28,6 +28,7 @@ const ModalAddEmployees = ({active, setActive}) => {
                     toast.success('Товар успешно добавлен');
                 } else {
                     toast.error('Что-то произошло.. Статус ошибки:' + response.status);
+                    return [{}];
                 }
             })
 

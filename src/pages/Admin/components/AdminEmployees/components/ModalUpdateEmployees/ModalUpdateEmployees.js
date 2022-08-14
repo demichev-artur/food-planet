@@ -15,6 +15,7 @@ const ModalUpdateEmployees = ({active, setActive, id}) => {
                     return response.json();
                 } else {
                     toast.error('При получении данных произошла ошибка');
+                    return [{}];
                 }
             })
             .then(data => setValues(data));

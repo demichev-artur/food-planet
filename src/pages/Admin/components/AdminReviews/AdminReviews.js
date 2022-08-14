@@ -29,6 +29,15 @@ const AdminReviews = () => {
         }
     }
 
+    let tableItems = reviews.map(item => (
+        <div key={item.id} className={styles.table_item}>
+            <div>{item.userName}</div>
+            <div>{item.review}</div>
+            <div>
+                <button id={item.id} onClick={reviewDelete}>Удалить отзыв</button>
+            </div>
+        </div>))
+
     useEffect(() => {
         fetch(`http://localhost:3001/reviews`)
             .then(response => {
@@ -40,15 +49,6 @@ const AdminReviews = () => {
             })
             .then(data => setReviews(data))
     }, []);
-
-    let tableItems = reviews.map(item => (
-        <div key={item.id} className={styles.table_item}>
-            <div>{item.userName}</div>
-            <div>{item.review}</div>
-            <div>
-                <button id={item.id} onClick={reviewDelete}>Удалить отзыв</button>
-            </div>
-        </div>))
 
     return (
         <div className={styles.container}>

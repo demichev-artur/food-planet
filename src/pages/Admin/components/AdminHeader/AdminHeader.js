@@ -5,6 +5,7 @@ import notifiIcon from "../../../../access/icons/new.svg";
 import photo from "../../../../access/icons/photo.png";
 
 const AdminHeader = (props) => {
+    
     return (
         <div className={styles.header}>
             <h1>{props.title}</h1>

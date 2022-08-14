@@ -1,8 +1,36 @@
 import React from 'react';
 import styles from './Contacts.module.css';
 import icon from '../../access/images/contact_us_image.jpg';
+import {toast} from "react-hot-toast";
 
 const Contacts = () => {
+    const getMessage = (e) => {
+        const data = {
+            name : e.currentTarget.name.value,
+            phone: e.currentTarget.phone.value
+        }
+
+        const options = {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }
+
+        const url = 'http://localhost:3001/support';
+
+        fetch(url, options)
+            .then(response => {
+                if (response.ok) {
+                    toast.success('Запрос отправлен');
+                } else {
+                    toast.error('Что-то произошло.. Статус ошибки:' + response.status);
+                    return [{}];
+                }
+            })
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.content}>
@@ -16,17 +44,16 @@ const Contacts = () => {
                     <div className={styles.form}>
                         <p>Мы рады ответить на все ваши интересующие вопросы:</p>
 
-                        <form action="" className={styles.message_blank}>
+                        <form onSubmit={getMessage} action="javascript:void(0)" className={styles.message_blank}>
                             <h2>Форма обратной связи</h2>
                             <label htmlFor="">
                                 <p>Укажите Ваше имя:</p>
-                                <input type="text" placeholder="Иван"/>
+                                <input required type="text" placeholder="Иван" name="name"/>
                             </label>
                             <label htmlFor="">
                                 <p>Укажите Ваш номер:</p>
-                                <input type="text" placeholder="+996(555)010203"/>
+                                <input required type="tel" placeholder="+996 (555) 01 02 03" name="phone"/>
                             </label>
-
 
                             <button className={styles.btn}>Запросить обратный звонок</button>
                         </form>

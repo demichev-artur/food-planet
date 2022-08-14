@@ -5,10 +5,8 @@ import MenuProducts from "../../components/MenuProducts/MenuProducts";
 import Benefits from "./components/Benefits/Benefits";
 import Reviews from "./components/Reviews/Reviews";
 import HeaderContent from "../../components/HeaderContent/HeaderContent";
-import {toast} from "react-hot-toast";
 
 const Main = () => {
-
     return (
         <>
             <HeaderContent/>

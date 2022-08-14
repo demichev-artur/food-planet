@@ -14,6 +14,7 @@
     padding: 20px 0;
     overflow: auto!important;
     -ms-overflow-style: none!important;
+    position: relative;
 }
 
 .content::-webkit-scrollbar {

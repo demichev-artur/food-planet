@@ -14,7 +14,7 @@ const Admin = (props) => {
 
                <AdminHeader title={props.title}/>
 
-                <div className={styles.content}>
+                <div className={styles.content} id="content">
                     <Outlet/>
                 </div>
 

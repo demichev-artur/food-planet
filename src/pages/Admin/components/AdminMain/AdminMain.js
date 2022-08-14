@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './AdminMain.module.css';
 
 const AdminMain = () => {
-    const arr = ["Пицца", "Бургер", "Суши", "Роллы", "Салаты", "Десерты", "Напитки", "Роллы"];
+    const [category, setCategory] = useState([]);
 
-    const cards = arr.map( item => (
-        <div className={styles.card}>
-            <h2>{item}</h2>
+    useEffect(() => {
+        fetch(`http://localhost:3001/category`)
+            .then(response => {
+                if (response.status === 200) {
+                    return response.json();
+                } else {
+                    return [{}];
+                }
+            })
+            .then(data => setCategory(data))
+    }, []);
+
+    const cards = category.map( (item, i) => (
+        <div key={i} className={styles.card}>
+            <h2>{Object.values(item)}</h2>
             <span>0</span>
         </div>
-    ))
+    ));
+
     return (
         <div className={styles.container}>
             {cards}

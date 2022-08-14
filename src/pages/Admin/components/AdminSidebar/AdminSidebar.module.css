@@ -67,3 +67,6 @@
     border-left: 3px solid #DDE2FF;
     background-color: rgba(159, 162, 180, 0.08);
 }
+.sidebar ul li img:hover{
+    fill: #FF583E!important;
+}

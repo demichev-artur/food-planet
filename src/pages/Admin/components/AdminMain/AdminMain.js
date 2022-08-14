@@ -5,7 +5,7 @@ const AdminMain = () => {
     const [category, setCategory] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/category`)
+        fetch(`http://localhost:3001/category/`)
             .then(response => {
                 if (response.status === 200) {
                     return response.json();

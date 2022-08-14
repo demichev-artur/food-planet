@@ -60,14 +60,23 @@ header ul li img {
     margin-right: 8px;
 }
 
-.bundle_count {
+.basket_null {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+    color: black!important;
 }
 
+.basket_count {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FF583E;
+}
 .active {
     color: #FF583E;
 }

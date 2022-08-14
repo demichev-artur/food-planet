@@ -7,6 +7,14 @@ import plus from "../../access/icons/plusIcon.svg";
 const Cards = props => {
     const [count, setCount] = useState(1);
 
+    const getToBasket = (data) => {
+        const id = data.id;
+        let cart = JSON.parse(localStorage.getItem('cart')) || {};
+        cart[id] = { ...data, count:count};
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+    }
     return (
         <div className={styles.card}>
 
@@ -35,7 +43,7 @@ const Cards = props => {
 
             </div>
 
-            <button className={styles.btn_get_bundle}>В корзину</button>
+            <button className={styles.btn_get_bundle} onClick={()=>getToBasket(props.data)}>В корзину</button>
         </div>
     )
 }

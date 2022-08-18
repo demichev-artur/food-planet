@@ -25,7 +25,6 @@ const AdminReviews = () => {
                     }
                 })
 
-            window.location.reload();
         }
     }
 

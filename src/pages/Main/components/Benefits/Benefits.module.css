@@ -1,63 +1,51 @@
-.benefits{
+.benefits {
     display: flex;
     justify-content: center;
-
     flex-direction: column;
     max-width: 1165px;
     font-family: 'Roboto', serif;
     margin: 50px 0;
 }
-.benefits h1{
+
+.benefits h1 {
     font-style: normal;
     display: flex;
     justify-content: flex-start;
     font-weight: 900;
     font-size: 25px;
     line-height: 29px;
-
     width: 100%;
     text-align: left;
-    /* h1 */
-
     color: #254F4C;
-
 }
-.content{
+
+.content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 45px;
     padding: 25px 0;
 }
-.content div{
 
+.content div {
     text-align: center;
     width: 256px;
 }
 
-.benefits h2{
+.benefits h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
-
     text-align: center;
-
-    /* h1 */
-
     color: #254F4C;
-
 }
 
-.benefits p{
+.benefits p {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-
-    /* тл */
-
     color: #1D3130;
 }

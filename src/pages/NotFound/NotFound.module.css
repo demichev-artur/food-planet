@@ -4,18 +4,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*padding: 50px;*/
 }
 
 .container {
     display: flex;
-    margin: 40px 0;
+    margin: 100px 0;
     border-radius: 70px;
     box-sizing: border-box;
     background-color: #2B4241;
     box-shadow: 0 0 40px 0;
 }
-.container h1{
+
+.container h1 {
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
     font-weight: 500;
@@ -36,7 +36,6 @@ p {
     text-align: center;
     font-size: 24px;
     box-sizing: border-box;
-    /*padding: 35px 0 85px;*/
 }
 
 .container img {
@@ -67,10 +66,10 @@ p {
 
 
 @keyframes anm {
-    from{
+    from {
         background-color: #2B4241;
     }
-    to{
+    to {
         box-shadow: inset 1px 0 20px 20px #ff4326;
 
     }

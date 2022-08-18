@@ -9,7 +9,7 @@ const ModalAddProducts = ({active, setActive}) => {
             productName: e.currentTarget.name.value,
             productCompound: e.currentTarget.desc.value,
             productPrice: e.currentTarget.price.value,
-            category: e.currentTarget.category.value
+            category: +e.currentTarget.category.value
 
         }
         const options = {

@@ -31,7 +31,6 @@ const ModalAddReviews = ({active, setActive}) => {
             })
 
         setActive(false);
-        window.location.reload();
     }
 
     return (

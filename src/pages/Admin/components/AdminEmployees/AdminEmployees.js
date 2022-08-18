@@ -4,7 +4,6 @@ import ModalAddEmployees from "./components/ModalAddEmployees/ModalAddEmployees"
 import toast from "react-hot-toast";
 import ModalUpdateEmployees from "./components/ModalUpdateEmployees/ModalUpdateEmployees";
 
-
 const AdminEmployees = () => {
     const [employees, setEmployees] = useState([]);
     const [modalActiveCreate, setModalActiveCreate] = useState(false);
@@ -30,7 +29,6 @@ const AdminEmployees = () => {
                     }
                 })
         }
-
     }
 
     const updateEmployee = (e) => {
@@ -83,6 +81,7 @@ const AdminEmployees = () => {
                 </div>
                 {cards}
             </div>
+
             <ModalAddEmployees active={modalActiveCreate} setActive={setModalActiveCreate}/>
             <ModalUpdateEmployees active={modalActiveUpdate} setActive={setModalActiveUpdate} id={id}/>
         </>

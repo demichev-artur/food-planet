@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styles from "./MenuProducts.module.css";
 import minus from "../../access/icons/minusIcon.svg";
 import plus from "../../access/icons/plusIcon.svg";
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Cards = props => {
@@ -13,8 +14,9 @@ const Cards = props => {
         cart[id] = { ...data, count:count};
 
         localStorage.setItem('cart', JSON.stringify(cart));
-
+        toast.success('Добавлено в корзину')
     }
+
     return (
         <div className={styles.card}>
 
@@ -43,7 +45,7 @@ const Cards = props => {
 
             </div>
 
-            <button className={styles.btn_get_bundle} onClick={()=>getToBasket(props.data)}>В корзину</button>
+            <button className={styles.btn_get_bundle} onClick={()=> getToBasket(props.data)}>В корзину</button>
         </div>
     )
 }

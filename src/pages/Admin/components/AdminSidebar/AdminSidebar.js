@@ -20,26 +20,31 @@ const AdminSidebar = (props) => {
             </div>
 
             <ul>
-                <NavLink className={setActive} to="main" onClick={()=>props.setTitle("Главная")}>
+                <NavLink className={setActive} to="main" onClick={() => props.setTitle("Главная")}>
                     <li><img src={listIcon1} alt=""/>Главная</li>
                 </NavLink>
-                <NavLink className={setActive} to="orders" onClick={()=>props.setTitle("Заказы")}>
+
+                <NavLink className={setActive} to="orders" onClick={() => props.setTitle("Заказы")}>
                     <li><img src={listIcon2} alt=""/>Заказы</li>
                 </NavLink>
-                <NavLink className={setActive} to="menu" onClick={()=>props.setTitle("Меню")}>
+
+                <NavLink className={setActive} to="menu" onClick={() => props.setTitle("Меню")}>
                     <li><img src={listIcon3} alt=""/>Меню</li>
                 </NavLink>
-                <NavLink className={setActive} to="contacts" onClick={()=>props.setTitle("Контакты")}>
+
+                <NavLink className={setActive} to="contacts" onClick={() => props.setTitle("Контакты")}>
                     <li><img src={listIcon4} alt=""/>Контакты</li>
                 </NavLink>
-                <NavLink className={setActive} to="reviews" onClick={()=>props.setTitle("Отзывы")}>
+
+                <NavLink className={setActive} to="reviews" onClick={() => props.setTitle("Отзывы")}>
                     <li><img src={listIcon5} alt=""/>Отзывы</li>
                 </NavLink>
-                <NavLink className={setActive} to="employees" onClick={()=>props.setTitle("Сотрудники")}>
+
+                <NavLink className={setActive} to="employees" onClick={() => props.setTitle("Сотрудники")}>
                     <li><img src={listIcon6} alt=""/>Сотрудники</li>
                 </NavLink>
-
             </ul>
+
         </div>
     );
 };

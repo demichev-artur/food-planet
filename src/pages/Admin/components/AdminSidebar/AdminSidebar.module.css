@@ -55,7 +55,7 @@
 .active li {
     border-left: 3px solid #DDE2FF;
     background-color: rgba(159, 162, 180, 0.08);
-    color: #DDE2FF!important;
+    color: #DDE2FF !important;
 }
 
 .active img {
@@ -67,6 +67,7 @@
     border-left: 3px solid #DDE2FF;
     background-color: rgba(159, 162, 180, 0.08);
 }
-.sidebar ul li img:hover{
-    fill: #FF583E!important;
+
+.sidebar ul li img:hover {
+    fill: #FF583E !important;
 }

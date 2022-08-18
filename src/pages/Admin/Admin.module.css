@@ -1,7 +1,7 @@
 .container {
     height: 100vh;
     display: flex;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
 .content {
@@ -12,8 +12,8 @@
     height: calc(100vh - 120px);
     gap: 20px;
     padding: 20px 0;
-    overflow: auto!important;
-    -ms-overflow-style: none!important;
+    overflow: auto !important;
+    -ms-overflow-style: none !important;
     position: relative;
 }
 

@@ -21,6 +21,7 @@ const Delivery = () => {
                 </div>
 
                 <div className={styles.how_work}>
+
                     <h2>Как работает доставка</h2>
                     <div>
                         <span>1</span>
@@ -62,6 +63,7 @@ const Delivery = () => {
 
                 <h2>Доставка в самые короткие сроки</h2>
                 <div className={styles.how_pay}>
+
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="36px">
                             <path fill="#2b2b2b"
@@ -69,6 +71,7 @@ const Delivery = () => {
                         </svg>
                         <p>У нас действует собственная служба доставки</p>
                     </div>
+
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 32" width="46" height="32">
 
@@ -84,6 +87,7 @@ const Delivery = () => {
                         </svg>
                         <p>Доставка по большинству районов города</p>
                     </div>
+
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="43px">
                             <path fill="#2b2b2b"
@@ -91,6 +95,7 @@ const Delivery = () => {
                         </svg>
                         <p>Онлайн оплата или наличными курьеру после получения заказа</p>
                     </div>
+
                 </div>
             </div>
         </div>

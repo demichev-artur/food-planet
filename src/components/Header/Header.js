@@ -10,17 +10,16 @@ const Header = () => {
 
     const setActive = ({isActive}) => isActive ? styles.active : "";
 
-    useEffect(()=>{
-        if(localStorage.getItem('cart') !== null){
+    useEffect(() => {
+        if (localStorage.getItem('cart') !== null) {
             let count = JSON.parse(localStorage.getItem('cart'));
             setCountBasket(Object.keys(count).length);
         }
-
     },[])
-
 
     return (
         <>
+
             <header>
                 <ul>
                     <img src={logo} alt=""/>
@@ -31,12 +30,15 @@ const Header = () => {
                     <li><a href="tel:+996500405988"><img src={phoneIcon} alt=""/>+996500405988</a></li>
                     <li className={styles.bundle}>
                         <NavLink className={setActive} to="/basket"><img src={bundleIcon} alt=""/>
-                            <span className={countBasket > 0 ? styles.basket_count : styles.basket_null}>{countBasket}</span>
+                            <span
+                                className={countBasket > 0 ? styles.basket_count : styles.basket_null}>{countBasket}</span>
                         </NavLink>
                     </li>
                 </ul>
             </header>
+
             <Outlet/>
+
         </>
     );
 };

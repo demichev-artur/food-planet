@@ -41,6 +41,7 @@ const ModalAddEmployees = ({active, setActive}) => {
             <div className={styles.modal_content}>
                 <img className={styles.close_icon} src="https://cdn-icons-png.flaticon.com/512/70/70091.png" alt=""
                      onClick={() => setActive(false)}/>
+
                 <h2>Добавление сотрудника</h2>
                 <form onSubmit={addEmployees} action="javascript:void(0)">
                     <div>
@@ -67,9 +68,9 @@ const ModalAddEmployees = ({active, setActive}) => {
                         <label htmlFor="phone">Номер телефона</label>
                         <input type="text" name="phone"/>
                     </div>
-
                     <button>Добавить</button>
                 </form>
+
             </div>
         </div>
     );

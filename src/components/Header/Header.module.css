@@ -66,7 +66,7 @@ header ul li img {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    color: black!important;
+    color: black !important;
 }
 
 .basket_count {
@@ -77,6 +77,7 @@ header ul li img {
     line-height: 23px;
     color: #FF583E;
 }
+
 .active {
     color: #FF583E;
 }

@@ -33,9 +33,10 @@ const TableItems = props => {
             <div className={styles.price}><span>{props.data.productPrice} сом</span></div>
             <div className={styles.price}><span>{props.data.productPrice * count} сом</span></div>
             <div>
-                <button onClick={()=> localStorage.removeItem('')} className={styles.btn_remove} id={props.data.id}><img style={{width: "30px"}}
-                                                                              src="https://cdn-icons-png.flaticon.com/512/70/70091.png"
-                                                                              alt=""/>
+                <button onClick={() => localStorage.removeItem('cart')} className={styles.btn_remove}
+                        id={props.data.id}><img style={{width: "30px"}}
+                                                src="https://cdn-icons-png.flaticon.com/512/70/70091.png"
+                                                alt=""/>
                 </button>
             </div>
         </div>
@@ -44,6 +45,7 @@ const TableItems = props => {
 
 const Basket = () => {
     const [basketValues, setBasketValues] = useState([]);
+    const [totalPrice, setTotalPrice] = useState(0);
 
     const getProducts = () => {
         if (localStorage.getItem('cart') !== null) {
@@ -79,10 +81,16 @@ const Basket = () => {
                     return [{}];
                 }
             })
-
     }
 
+
+
     useEffect(getProducts, []);
+    useEffect(()=> {
+        let a = Object.values(basketValues);
+        console.log(a);
+
+    },[basketValues])
 
     return (
         <div className={styles.container}>
@@ -99,21 +107,24 @@ const Basket = () => {
                     <div>К оплате</div>
                     <div>Действия</div>
                 </div>
+
                 {
                     basketValues.map(item => <TableItems data={item}/>)
                 }
+
                 <div className={styles.table_item}>
-                    <div><p>Итого к оплате: <span className={styles.get_total_price}>0</span></p></div>
+                    <div><p>Итого к оплате: <span className={styles.get_total_price}>{totalPrice}</span></p></div>
                 </div>
             </div>
+
             <div className={styles.inputs}>
                 <form onSubmit={getOrder} action="javascript:void(0)">
                     <input required type="text" name="name" placeholder="Укажите ваше имя"/>
                     <input required type="text" name="phone" placeholder="Укажите ваш номер"/>
                     <button>Оформить заказ</button>
                 </form>
-
             </div>
+
         </div>
     );
 };

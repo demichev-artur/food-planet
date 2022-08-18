@@ -1,0 +1,528 @@
+{
+  "category": [
+    {
+      "1": "Пицца"
+    },
+    {
+      "2": "Бургер"
+    },
+    {
+      "3": "Суши"
+    },
+    {
+      "4": "Роллы"
+    },
+    {
+      "5": "Салаты"
+    },
+    {
+      "6": "Десерты"
+    },
+    {
+      "7": "Напитки"
+    },
+    {
+      "8": "Новинки"
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "productImg": "https://i.yapx.ru/TUqa0.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 2,
+      "productImg": "https://i.yapx.ru/TUqa1.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 3,
+      "productImg": "https://i.yapx.ru/TUqa2.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 4,
+      "productImg": "https://i.yapx.ru/TUqa3.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 5,
+      "productImg": "https://i.yapx.ru/TUqa4.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 6,
+      "productImg": "https://i.yapx.ru/TUqa5.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 7,
+      "productImg": "https://i.yapx.ru/TUqa6.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 8,
+      "productImg": "https://i.yapx.ru/TUqa7.png",
+      "productName": "Мексиканская",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 1
+    },
+    {
+      "id": 9,
+      "productImg": "https://i.yapx.ru/TUqa8.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 10,
+      "productImg": "https://i.yapx.ru/TUqa9.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 11,
+      "productImg": "https://i.yapx.ru/TUqcA.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 12,
+      "productImg": "https://i.yapx.ru/TUqcB.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 13,
+      "productImg": "https://i.yapx.ru/TUqcB.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 14,
+      "productImg": "https://i.yapx.ru/TUqcA.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 15,
+      "productImg": "https://i.yapx.ru/TUqa9.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 16,
+      "productImg": "https://i.yapx.ru/TUqa8.png",
+      "productName": "Чизбургер",
+      "productCompound": "Булка, котлета,сыр,  соленый огурец, лук, помидор,\nсалат айсберг,\nсоус чесночный, соус гриль,\nкетчуп, майонез",
+      "productPrice": 200,
+      "category": 2
+    },
+    {
+      "id": 17,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/393_medium.png",
+      "productName": "Суши Унаги",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 100,
+      "category": 3
+    },
+    {
+      "id": 18,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/345_medium.png",
+      "productName": "Суши кани",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 130,
+      "category": 3
+    },
+    {
+      "id": 19,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/426_medium.png",
+      "productName": "Cуши Эби",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 90,
+      "category": 3
+    },
+    {
+      "id": 20,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/838_medium.png",
+      "productName": "Хот суши Эби",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 90,
+      "category": 3
+    },
+    {
+      "id": 21,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/716_medium.png",
+      "productName": "Хот суши Сяке",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 90,
+      "category": 3
+    },
+    {
+      "id": 22,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/664_medium.png",
+      "productName": "Хот суши Кани ",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 130,
+      "category": 3
+    },
+    {
+      "id": 23,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/674_medium.png",
+      "productName": "Хот суши Кунсей",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 90,
+      "category": 3
+    },
+    {
+      "id": 24,
+      "productImg": "https://st27.stblizko.ru/images/product/153/739/728_medium.png",
+      "productName": "Хот суши Тай",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 80,
+      "category": 3
+    },
+    {
+      "id": 25,
+      "productImg": "https://st27.stblizko.ru/images/product/153/643/148_original.png",
+      "productName": "Калифорния",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 540,
+      "category": 4
+    },
+    {
+      "id": 26,
+      "productImg": "https://st27.stblizko.ru/images/product/153/636/624_original.png",
+      "productName": "Ролл Бонито",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 340,
+      "category": 4
+    },
+    {
+      "id": 27,
+      "productImg": "https://st27.stblizko.ru/images/product/153/594/901_original.png",
+      "productName": "Ролл Дракон",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 560,
+      "category": 4
+    },
+    {
+      "id": 28,
+      "productImg": "https://st27.stblizko.ru/images/product/153/622/989_original.png",
+      "productName": "Ролл Киото маки",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 140,
+      "category": 4
+    },
+    {
+      "id": 29,
+      "productImg": "https://st27.stblizko.ru/images/product/153/645/395_original.png",
+      "productName": "Ролл хоккайдо",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 280,
+      "category": 4
+    },
+    {
+      "id": 30,
+      "productImg": "https://st27.stblizko.ru/images/product/153/619/435_original.png",
+      "productName": "Ролл с креветкой",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 360,
+      "category": 4
+    },
+    {
+      "id": 31,
+      "productImg": "https://st27.stblizko.ru/images/product/153/623/333_original.png",
+      "productName": "Роллы Каппа маки",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 100,
+      "category": 4
+    },
+    {
+      "id": 32,
+      "productImg": "https://st27.stblizko.ru/images/product/153/637/121_original.png",
+      "productName": "Сяке маки",
+      "productCompound": "Угорь, Сыр Филадельфия, Омлет, Соус Терияки, Кунжут, Водоросли Нори, Рис. 180гр. 8 шт. в ролле",
+      "productPrice": 200,
+      "category": 4
+    },
+    {
+      "id": 33,
+      "productImg": "https://st41.stblizko.ru/images/product/126/691/047_medium.png",
+      "productName": "Греческий",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 310,
+      "category": 5
+    },
+    {
+      "id": 34,
+      "productImg": "https://st41.stblizko.ru/images/product/126/691/054_medium.png",
+      "productName": "Куринный",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 320,
+      "category": 5
+    },
+    {
+      "id": 35,
+      "productImg": "https://st35.stblizko.ru/images/product/200/846/922_medium.png",
+      "productName": "Овощной с креветками",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 320,
+      "category": 5
+    },
+    {
+      "id": 36,
+      "productImg": "https://st35.stblizko.ru/images/product/200/846/747_medium.png",
+      "productName": "Овощной с наггетсами",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 320,
+      "category": 5
+    },
+    {
+      "id": 37,
+      "productImg": "https://st41.stblizko.ru/images/product/126/691/069_medium.png",
+      "productName": "Оливье",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 280,
+      "category": 5
+    },
+    {
+      "id": 38,
+      "productImg": "https://st44.stblizko.ru/images/product/229/592/652_medium.png",
+      "productName": "Постный",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 310,
+      "category": 5
+    },
+    {
+      "id": 39,
+      "productImg": "https://st35.stblizko.ru/images/product/168/068/508_medium.png",
+      "productName": "Чука сарада",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 320,
+      "category": 5
+    },
+    {
+      "id": 40,
+      "productImg": "https://st27.stblizko.ru/images/product/153/769/322_medium.png",
+      "productName": "Цезарь с копченой семгой",
+      "productCompound": "Огурцы, перец болгарский, помидоры, сыр фета, маслины, зелень, базилик, масло оливковое.",
+      "productPrice": 430,
+      "category": 5
+    },
+    {
+      "id": 41,
+      "productImg": "https://st44.stblizko.ru/images/product/229/579/587_medium.png",
+      "productName": "Брауни Рокслайд",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 270,
+      "category": 6
+    },
+    {
+      "id": 42,
+      "productImg": "https://st44.stblizko.ru/images/product/229/579/933_medium.png",
+      "productName": "Десерт Манго-маракуйя",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 300,
+      "category": 6
+    },
+    {
+      "id": 43,
+      "productImg": "https://st27.stblizko.ru/images/product/153/738/675_medium.png",
+      "productName": "Сметанник",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 270,
+      "category": 6
+    },
+    {
+      "id": 44,
+      "productImg": "https://st44.stblizko.ru/images/product/229/580/409_medium.png",
+      "productName": "Тирамису Маскарпоне",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 340,
+      "category": 6
+    },
+    {
+      "id": 45,
+      "productImg": "https://st27.stblizko.ru/images/product/153/738/791_medium.png",
+      "productName": "Чизкейк малиновый",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 270,
+      "category": 6
+    },
+    {
+      "id": 46,
+      "productImg": "https://st27.stblizko.ru/images/product/153/738/063_medium.png",
+      "productName": "Чизкейк шоколадный",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 430,
+      "category": 6
+    },
+    {
+      "id": 47,
+      "productImg": "https://pngimg.com/uploads/macaron/small/macaron_PNG58.png",
+      "productName": "Набор Ням-Ням-1",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 430,
+      "category": 6
+    },
+    {
+      "id": 48,
+      "productImg": "https://pngimg.com/uploads/macaron/small/macaron_PNG106.png",
+      "productName": "Набор Ням-Ням-2",
+      "productCompound": "Шоколад темный, сливки, мука пшеничная, молоко сгущенное, какао, орех, сахар маргарин, меланж.",
+      "productPrice": 430,
+      "category": 6
+    },
+    {
+      "id": 49,
+      "productImg": "https://st44.stblizko.ru/images/product/229/581/201_medium.png",
+      "productName": "BON AQUA",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 60,
+      "category": 7
+    },
+    {
+      "id": 50,
+      "productImg": "https://st44.stblizko.ru/images/product/229/583/534_medium.png",
+      "productName": "Ситро",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 160,
+      "category": 7
+    },
+    {
+      "id": 51,
+      "productImg": "https://st44.stblizko.ru/images/product/229/583/567_medium.png",
+      "productName": "Тархун",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 160,
+      "category": 7
+    },
+    {
+      "id": 52,
+      "productImg": "https://st44.stblizko.ru/images/product/229/580/937_medium.png",
+      "productName": "Rich апельсиновый",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 120,
+      "category": 7
+    },
+    {
+      "id": 53,
+      "productImg": "https://st44.stblizko.ru/images/product/229/580/951_medium.png",
+      "productName": "Rich вишнёвый",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 120,
+      "category": 7
+    },
+    {
+      "id": 54,
+      "productImg": "https://st44.stblizko.ru/images/product/229/580/946_medium.png",
+      "productName": "Rich томатный",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 120,
+      "category": 7
+    },
+    {
+      "id": 55,
+      "productImg": "http://dgdesign.ru/uploads/posts/2020-12/1609150775_kartinki-na-prozrachnom-fone-sok-doeosisd.png",
+      "productName": "Сок апельсиновый",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 150,
+      "category": 7
+    },
+    {
+      "id": 56,
+      "productImg": "https://free-png.ru/wp-content/uploads/2022/06/free-png.ru-280-340x255.png",
+      "productName": "Fanta",
+      "productCompound": "газ/без газа. 0.5 л. Полный состав каждого блюда, а также время и район доставки уточняйте у оператора.",
+      "productPrice": 125,
+      "category": 7
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userName": "Сергей",
+      "userProfileImg": "https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png",
+      "review": "Большое спасибо! 5 пицц доставили даже быстрее чем планировалось. Пицца была горячая и всему коллективу понравилась! День Рождения прошел отлично! :)",
+      "reviewDate": "02.07.2020"
+    },
+    {
+      "id": 2,
+      "userName": "Анатолий",
+      "userProfileImg": "https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png",
+      "review": "Очень вкусные роллы Хаки, всем рекомендую! заказали в первый раз и теперь станем постоянными клиентами! Спасибо!",
+      "reviewDate": "02.07.2020"
+    },
+    {
+      "id": 3,
+      "userName": "Ваня",
+      "userProfileImg": "https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png",
+      "review": "Очень избирателен в еде, и Уже в третий раз не разочаровываюсь в Food Planet, советую всем! Жена тоже довольна!",
+      "reviewDate": "02.07.2020"
+    },
+    {
+      "userName": "Пётр",
+      "userProfileImg": "https://avatanplus.com/files/resources/original/5aa3f25827c87162106aa863.png",
+      "review": "Хочу поблагодарить за бургер !Очень вкусненький в меру остренький) Спасибо,удивили!)",
+      "reviewDate": "02.07.2020",
+      "id": 4
+    }
+  ],
+  "employees": [
+    {
+      "name": "Сергей Пантелеевич Мавроди",
+      "birthday": "11/08/1955",
+      "img": "https://mega-stars.ru/img/other/block_pictures/mavrodi_sergej_panteleevich.jpg",
+      "position": "Директор",
+      "phone": "+996555123456",
+      "id": 1
+    },
+    {
+      "name": "Шарик",
+      "birthday": "засекречено",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEXLoFxibLtkkTgmXBGIOe8ebaBg7W7xeFnpevPwK3Ox26QNOiQprExZE6fKXZ-PcEeag&usqp=CAU",
+      "position": "Служба безопасности ",
+      "phone": "засекречено",
+      "id": 2
+    }
+  ],
+  "support": [],
+  "orders": []
+}
